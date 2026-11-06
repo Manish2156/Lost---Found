@@ -1,0 +1,6 @@
+{
+  "name": "LOST & FOUND — Campus Recovery Network",
+  "description": "A trusted, modern campus lost and found platform for students and faculty to report, browse, and safely recover misplaced items.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
