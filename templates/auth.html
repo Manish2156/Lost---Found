@@ -1,0 +1,214 @@
+<style>
+  body {
+     background-color: #fdfbf7;
+     font-family: 'Segoe UI', sans-serif;
+     margin:0;
+     padding: 40px 20px;
+     box-sizing: border-box;
+     width: 100%;
+     min-height: max-content;
+     border:3px solid #064e3b;
+     background-image:linear-gradient(135deg,#bfe3db 0%,#f4edd1 100%)!important;
+          box-shadow: 0 8px 24px rgba(6,78,59,0.06);
+     display:flex;
+     justify-content: center;
+     align-items: flex-start;
+     gap:3rem;
+  }
+  .login-card ,.signup-box{
+
+     background-color:rgba(255,255,255,0.4);
+     backdrop-filter:blur(12px) ! important;
+     -webkit-backdrop-filter:blur(12px) ! important;
+     border: 2px solid #064e3b;
+     border-radius:12px;
+     padding:1rem  2.5rem 2.5rem 2.5rem;
+     width:100%;
+     max-width:400px;
+     box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+     margin-bottom: 3rem;
+     height: auto;
+     margin-top:30px;
+     overflow-y:auto;
+     max-height:320px;
+  }
+
+  h2 {
+     color: #064e3b;
+     margin-bottom: 0.5rem;
+     font-size: 1.8rem;
+  }
+
+  p {
+     color: #059669;
+     margin-bottom: 1.5rem;
+     font-size: 0.95rem;
+  }
+
+  .form-group {
+     margin-bottom: 1.25rem;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #064e3b;
+  }
+
+  .form-group input {
+    width:100%;
+    padding: 0.75rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 0.95rem;
+  }
+
+  .action-links {
+    margin-bottom: 1.5rem;
+    text-align: right;
+  }
+
+  .action links a {
+      color: #059669;
+      text-decoration: none;
+      font-size: 0.85rem;
+  }
+
+  .btn-submit {
+      background-color: #064e3b;
+      color:#ffffff;
+      border: none;
+      padding: 0.75rem;
+      border-radius: 6px;
+      width: 100%;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+}
+
+.btn-submit {
+  transition:all 0.2s ease;
+}
+
+.btn-submit:hover {
+  background-color:#047857;
+  transform: translatey(-2px);
+  box-shadow: 0 4px 12px rgba(4, 120, 87, 0.25);
+
+}
+.btn-submit:active {
+  background-color: #064e3b;
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(4, 120, 87, 0.1);
+}
+
+.switch-text {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.switch-text a {
+  color: #059669;
+  font-weight: 600;
+}
+
+.brand-logo {
+   font-size: 2.5rem;
+   text-align: center;
+   margin-bottom: 0.5rem;
+}
+</style>
+
+<div style="width: 100vw; position:absolute;top:0;left:0;border-bottom: 3px solid #064e3b; padding: 4px 15px; box-sizing:border-box; margin-bottom:35px;"><h1 style="margin:0; font-size: 22px;font-weight: 600; color:#064e3b; font-family: 'Segoe UI',sans-serif;">lost & found</h1></div>
+  <div class="login-card"> 
+     <div class="brand-logo"></div>
+  <h2>Login</h2>
+  <p>Welcome back!</p>
+
+  <div class="form-group">
+    <label>Roll number</label>
+    <input type="text" placeholder="Enter your number">
+  </div>
+  
+<div class="form-group">
+   <label>Password</label>
+   <input type="password" placeholder="Enter your password">
+</div>
+
+<div class="action-links">
+   <a href="#">Forgot password?</a>
+</div>
+
+<button class="btn-submit">Login</button>
+
+<p class="switch-text">Don't have an account? <a href="#">Sign Up</a></p>
+</div>
+  </div>
+  <div class="signup-box">
+    <div class="brand-logo"></div>
+     <h2>Sign Up.</h2>
+      <p>Create your account.</p>
+
+      <form>
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" placeholder="Enter your name" required>
+        </div>
+
+
+        <div class="form-group">
+           <label>Roll no.</label>
+            <input type="text" placeholder="Enter your Roll number" required>
+          </div>
+
+        <div class="form-group">
+           <label>Course </label>
+           <select style="width: 100%; padding:0.75rem; border: 1px solid #cbd5e1;border-radius:8px;box-sizing:border-box;background-color:white;color:#334155;"required>
+              <option value=""disabled selected>Select your Course</option>
+              <option value="B.SC-CS">B.SC-CS</option>
+              <option value="B.SC-IT">B.SC-IT</option>
+              <option value="B.SC">B.SC</option>
+              <option value="B.COM">B.COM</option>
+              <option value="B.ARTS">B.ARTS</option>
+              <option value="FYJC-Science">FYJC-Science</option>
+              <option value="FYJC-Commerce">FYJC-Commerce</option>
+              <option value="FYJC-Arts">FYJC-Arts</option>
+              <option value="SJYC">SYJC</option>
+            </select>
+           </div>
+
+          <div class="form-group">
+            <label>Year</label>
+            <select style="width:100%;padding: 0.75rem; border:1px solid #cbd5e1;border-radius:8px;box-sizing:border-box;background-color: white; color: #334155;"required>
+              <option value="" disabled selected>Select your Year</option>
+              <option value="FY">FY (First Year)</option>
+              <option value="SY">SY (Second Year)</option>
+              <option value="TY">TY (Third Year)</option>
+            </select>
+          </div>
+           <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" placeholder="Enter your mobile number" required>
+            </div>
+          
+            <div class="form-group">
+              <label>Password</label>
+               <input type="password" placeholder="Enter password" required>
+              </div>
+            
+            <div class="form-group">
+               <label>Confirm password</label>
+               <input type="password" placeholder="Confirm password" required>
+              </div>
+            
+            <div class="form-group">
+               <label>Profile picture</label>
+               <input type="file" accept="image/*" required>
+            </div>
+
+            <button type="submit" class="btn-submit">Sign Up</button>
+                  </div>
+      </form>
+  </div>
+</div>
